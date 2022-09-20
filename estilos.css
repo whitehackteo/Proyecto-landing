@@ -247,7 +247,7 @@ main .sobre.nosotros{
 }
 
 footer{
-    background: rgb(27, 29, 194);
+    background: rgb(21, 88, 233);
     padding: 60prgb(65, 65, 65)x 0;
     margin: auto;
     overflow: hidden;
@@ -268,7 +268,7 @@ footer{
 
 .content-foo h4{
     color: #fff;
-    border-bottom: 3px solid #d32620;
+    border-bottom: 3px solid #20d33e;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
