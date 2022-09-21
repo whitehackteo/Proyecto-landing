@@ -247,42 +247,167 @@ main .sobre.nosotros{
 }
 
 footer{
-    background: rgb(21, 88, 233);
+    background: rgb(27, 156, 241);
     padding: 60prgb(65, 65, 65)x 0;
     margin: auto;
     overflow: hidden;
 }
 
-.contenedor-footer{
+.main-content{
     display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-}
+  }
 
-.content-foo{
-    text-align: center;
-}
-
-.content-foo h4{
-    color: #fff;
-    border-bottom: 3px solid #20d33e;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.content-foo p{
-    color: white;
-}
-
-.titulo-final{
-    text-align: center;
-    font-size: 24px;
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content{
     margin: 20px 0 0 0;
-    color: #9e9797;
-}
+    position: relative;
+  }
+  .box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #2b9af5;
+  }
+  .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #0b82f1;
+    top: -10px;
+  }
+  .left .content p{
+    text-align: justify;
+  }
+  .left .content .social{
+    margin: 20px 0 0 0;
+  }
+  .left .content .social a{
+    padding: 0 2px;
+  }
+  .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #0d86f8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .left .content .social a span:hover{
+    background: #117af3;
+  }
+  .center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a7af8;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .content .fas:hover{
+    background: #22a0f3;
+  }
+  .center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .center .content .phone{
+    margin: 15px 0;
+  }
+  .right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: white;
+  }
+  .right form .msg{
+    margin-top: 10px;
+  }
+  .right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: white;
+    padding-left: 10px;
+    border: 1px solid #20a3fa;
+  }
+  .right form input:focus,
+  .right form textarea:focus{
+    outline-color: #3498db;
+  }
+  .right form input{
+    height: 35px;
+  }
+  .right form .btn{
+    margin-top: 10px;
+  }
+  .right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #23b7f1;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 10px;
+  }
+  .right form .btn button:hover{
+    background: rgb(40, 165, 236);
+  }
+  .bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #000b0f;
+  }
+  .bottom center span{
+    color: #38bff5;
+  }
+  .bottom center a{
+    color: #20c7f1;
+    text-decoration: none;
+  }
+  .bottom center a:hover{
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+  }
+  
+  input{
+    border: none;
+    outline: none;
+    }
+  textarea{
+  outline: none;
+  outline:none;
+  }
+  
 
 @media screen and (max-width:900px){
     header{
@@ -344,6 +469,17 @@ footer{
     .servicio-ind img{
         width: 90%;
     }
+    footer{
+        position: relative;
+        bottom: 0px;
+      }
+      .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      .main-content .box{
+        margin: 5px 0;
+      }
 }
 
 @media screen and (max-width:500px){
@@ -395,25 +531,17 @@ footer{
 
     /* Footer */
 
-    .contenedor-footer{
+    footer{
+        position: relative;
+        bottom: 0px;
+      }
+      .main-content{
+        flex-wrap: wrap;
         flex-direction: column;
-        border: none;
-    }
-
-    .content-foo{
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .content-foo h4{
-        border: none;
-    }
-
-    .content-foo p{
-        color: #ccc;
-        border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 20px;
-    }
+      }
+      .main-content .box{
+        margin: 5px 0;
+      }
 
     .titulo-final{
         font-size: 20px;
