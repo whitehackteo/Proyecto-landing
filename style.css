@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: dodgerblue;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #2980B9;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9), url(img/seguridad-informatica-ambito-empresarial-ealde.jpg);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, hsla(196, 93%, 70%, 0.671), #2980B9), url(img/seguridad-informatica-ambito-empresarial-ealde.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: black;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.div-titulo{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-titulo h1{
+    font-weight: 300;
+}
+
+.contenedor{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor .div-formulario{
+    width: 30%;
+    height: 250px;
+    margin: 15px 15px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor .div-formulario h2{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.contenedor .div-formulario form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .div-formulario form input,
+.contenedor .div-formulario form button{
+    width: 60%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.contenedor .div-listado{
+    width: 55%;
+    height: calc(100% - 50px);
+    margin: 15px 15px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor .div-listado h2{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.contenedor .div-listado .div-estudiantes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0 30px;
+}
+
+.contenedor.div-listado .div-estudiantes p{
+    margin: 10px 0;
+    font-size: 1em;
+    color: #ddd;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+}
+
+.btn{
+    padding: 5px 10px;
+    border: none;
+    margin: 0 5px;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn-editar{
+    background-color: blue;
+}
+
+.btn-eliminar{
+    background-color: red;
+}
+
+footer{
+    background: rgb(99, 191, 252);
+    padding: 60prgb(65, 65, 65)x 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-content{
+    display: flex;
+  }
+
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  .box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #2b9af5;
+  }
+  .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #0b82f1;
+    top: -10px;
+  }
+  .left .content p{
+    text-align: justify;
+  }
+  .social{
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  .social li{
+    margin:  0 20px;
+  }
+
+  .social li a{
+    border: 3px solid deepskyblue;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 50%;
+    border-right: none;
+    border-top: none;
+    transition: 0.3s ease;
+  }
+
+  .social li a:hover{
+    border-top: 3px solid;
+    border-right: 3px solid;
+    transform: rotate(360deg);
+    
+    border-color: white;
+  }
+
+  .center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a7af8;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .content .fas:hover{
+    background: #22a0f3;
+  }
+  .center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .center .content .phone{
+    margin: 15px 0;
+  }
+  .right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: white;
+  }
+  .right form .msg{
+    margin-top: 10px;
+  }
+  .right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: white;
+    padding-left: 10px;
+    border: 1px solid #20a3fa;
+  }
+  .right form input:focus,
+  .right form textarea:focus{
+    outline-color: #3498db;
+  }
+  .right form input{
+    height: 35px;
+  }
+  .right form .btn{
+    margin-top: 10px;
+  }
+  .right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #23b7f1;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 10px;
+  }
+  .right form .btn button:hover{
+    background: rgb(40, 165, 236);
+  }
+  .bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #000b0f;
+  }
+  .bottom center span{
+    color: #38bff5;
+  }
+  .bottom center a{
+    color: #20c7f1;
+    text-decoration: none;
+  }
+  .bottom center a:hover{
+    text-decoration: underline;
+  }
+  .titulo-final{
+    text-align: center;
+  }
+  @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+  }
